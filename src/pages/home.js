@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles.scss'
-import { Button } from 'react-bootstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 
@@ -29,7 +28,7 @@ class Home extends React.Component {
     return (
       <div className="page-container">
         <h1>manipulating with animating lists</h1>
-        <Button size='sm' variant='light' onClick={this.handleAdd}>add</Button>
+        <button onClick={this.handleAdd}>add</button>
         <TransitionGroup component="ul">
           {this.state.favorites.map(
             ({ id, name }) => (
@@ -38,9 +37,9 @@ class Home extends React.Component {
                 classNames="fade"
                 key={id}
               >
-                <li className="favorite">
+                <li>
                   {name}
-                  <Button size='sm' variant='info' id={id} onClick={this.handleRemove}>remove</Button>
+                  <button id={id} onClick={this.handleRemove}>remove</button>
                 </li>
               </CSSTransition>
             ),
