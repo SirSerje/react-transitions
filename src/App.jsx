@@ -1,14 +1,14 @@
 import React from 'react'
 import { BrowserRouter, Link, NavLink, Route } from 'react-router-dom'
 import { CSSTransition } from 'react-transition-group'
-import Home from './pages/home'
-import Contact from './pages/contact'
+import CssTransitions from './pages/CssTransitions'
+import PureAnimation from './pages/PureAnimation'
 import './styles.scss'
 
 const spacer = ' ';
 const routes = [
-  { path: '/', name: 'react-transition', Component: Home },
-  { path: '/contact', name: 'pure-css', Component: Contact },
+  { path: '/', name: 'react-transition', Component: CssTransitions },
+  { path: '/contact', name: 'pure-css', Component: PureAnimation },
 ];
 
 // eslint-disable-next-line no-empty-pattern

@@ -3,7 +3,7 @@ import './styles.scss'
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 
-class Home extends React.Component {
+class CssTransitions extends React.Component {
   constructor(props) {
     super(props);
 
@@ -51,4 +51,4 @@ class Home extends React.Component {
   }
 }
 
-export default  Home;
+export default  CssTransitions;

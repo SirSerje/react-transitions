@@ -3,7 +3,7 @@ import './styles.scss'
 
 const ANIM_TIME = 300;
 
-class Contact extends React.Component {
+class PureAnimation extends React.Component {
   constructor(props) {
     super(props);
 
@@ -57,4 +57,4 @@ class Contact extends React.Component {
 
 }
 
-export default Contact
+export default PureAnimation
