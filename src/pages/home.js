@@ -27,7 +27,8 @@ class Home extends React.Component {
   render() {
     return (
       <div className="page-container">
-        <h1>manipulating with animating lists</h1>
+        <h1>Transition Group with List</h1>
+        <p>Example, where we will use react-transition-group with simple list</p>
         <button onClick={this.handleAdd}>add</button>
         <TransitionGroup component="ul">
           {this.state.favorites.map(

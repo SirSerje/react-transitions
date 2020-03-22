@@ -5,10 +5,10 @@ import Home from './pages/home'
 import Contact from './pages/contact'
 import './styles.scss'
 
-
+const spacer = ' ';
 const routes = [
-  { path: '/', name: 'Home', Component: Home },
-  { path: '/contact', name: 'Contact', Component: Contact },
+  { path: '/', name: 'react-transition', Component: Home },
+  { path: '/contact', name: 'pure-css', Component: Contact },
 ];
 
 // eslint-disable-next-line no-empty-pattern
@@ -22,7 +22,7 @@ const App = ({}) => (
         activeClassName="active"
         exact
       >
-        {route.name}
+        {route.name}{spacer}
       </Link>
     ))}
     {routes.map(({ path, Component }) => (
